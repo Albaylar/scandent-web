@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ScanDent — AI dental scanner for iPhone. Scan your smile, get a 0–100 score, and explore a whitening preview.">
+  <meta name="description" content="ScanDent — AI dental scanner for iPhone & Apple Watch. 3-angle deep scan, 0–100 Dental Score, daily plan, streak tracking, and a free Watch brushing companion.">
+  <meta name="theme-color" content="#3DCCA8">
   <title>ScanDent — AI Dental Scanner</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233DCCA8'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui'>🦷</text></svg>">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="container inner">
       <a class="brand" href="./">
-        <span class="brand-mark" aria-hidden="true">🦷</span>
+        <img src="assets/logo-mark.png" alt="" width="36" height="36">
         <span>ScanDent</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#features">Features</a>
+        <a href="#watch">Apple Watch</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
         <a href="terms/">Terms</a>
         <a href="privacy/">Privacy</a>
       </nav>
-      <a class="btn btn-primary" href="#download">Coming to App Store</a>
+      <div class="header-cta">
+        <a class="btn btn-primary btn-sm" href="#download">Get ScanDent</a>
+      </div>
     </div>
   </header>
 
@@ -29,50 +35,86 @@
     <section class="hero">
       <div class="hero-blob one"></div>
       <div class="hero-blob two"></div>
+      <div class="hero-blob three"></div>
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Scan your smile</span>
-          <h1>Scan your smile with ScanDent</h1>
+          <h1>Your Dental Score in seconds</h1>
           <p class="lead">
-            ScanDent turns a quick 3-angle selfie into a 0–100 dental score, visual insights,
-            daily care tips, and an AI whitening preview — designed for curiosity, not clinic visits.
+            ScanDent turns a quick 3-angle selfie into a 0–100 Dental Score, visual insights,
+            a daily care plan, streak tracking, and a free Apple Watch brushing companion —
+            built for curiosity and better habits, not clinic visits.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#download">Get ScanDent</a>
+            <a class="btn btn-primary" href="#download">Coming to App Store</a>
             <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
           </div>
           <p class="hero-note">For entertainment and informational purposes only — not a medical diagnosis.</p>
+          <div class="hero-badges">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z"/></svg>
+              3-angle deep scan
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Apple Watch free
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Privacy first
+            </span>
+          </div>
         </div>
 
-        <div class="phone-card" aria-hidden="true">
-          <div class="score-ring">
-            <div class="score-value">
-              <strong>82</strong>
-              <span>ScanDent score</span>
+        <div class="phone-stack">
+          <div class="phone-card">
+            <div class="phone-card-header">
+              <img src="assets/logo-mark.png" alt="" width="28" height="28">
+              <span>ScanDent</span>
+            </div>
+            <div class="score-ring">
+              <div class="score-value">
+                <strong>82</strong>
+                <span>Dental Score</span>
+              </div>
+            </div>
+            <div class="scan-steps" aria-label="3-angle deep scan">
+              <div class="scan-step">
+                <div class="scan-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+                <label>Front</label>
+              </div>
+              <span class="scan-connector">›</span>
+              <div class="scan-step">
+                <div class="scan-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+                <label>Upper</label>
+              </div>
+              <span class="scan-connector">›</span>
+              <div class="scan-step">
+                <div class="scan-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+                <label>Lower</label>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/></svg></div>
+                <div>
+                  <strong>Whitening preview</strong>
+                  <span>Before / after simulation with Pro</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h12"/></svg></div>
+                <div>
+                  <strong>Daily plan & streak</strong>
+                  <span>Checklist, reminders, progress</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="feature-list">
-            <div class="feature-item">
-              <div class="icon">📸</div>
-              <div>
-                <strong>3-angle deep scan</strong><br>
-                <span style="color: var(--text-muted); font-size: 0.92rem;">Front, upper & lower views</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="icon">✨</div>
-              <div>
-                <strong>Whitening preview</strong><br>
-                <span style="color: var(--text-muted); font-size: 0.92rem;">Before / after simulation</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="icon">🗓️</div>
-              <div>
-                <strong>Daily care plan</strong><br>
-                <span style="color: var(--text-muted); font-size: 0.92rem;">Reminders & streak tracking</span>
-              </div>
-            </div>
+          <div class="watch-card" aria-hidden="true">
+            <div class="watch-card-label">Apple Watch</div>
+            <div class="watch-timer">1:42</div>
+            <div class="watch-sub">Guided brushing · Zone 2/4</div>
           </div>
         </div>
       </div>
@@ -81,34 +123,100 @@
     <section id="features">
       <div class="container">
         <div class="section-title">
-          <h2>Built for ScanDent users</h2>
-          <p>A focused iOS experience — scan, score, improve habits, and share your progress.</p>
+          <h2>Everything in ScanDent</h2>
+          <p>A focused iOS experience — scan, score, build habits, and track progress over time.</p>
         </div>
         <div class="cards-3">
           <article class="card">
-            <h3>0–100 score</h3>
-            <p>A clear overall score with sub-metrics for plaque visibility, enamel staining, and gum appearance — powered by AI vision.</p>
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+            <h3>0–100 Dental Score</h3>
+            <p>Clear overall score with sub-metrics for plaque visibility, enamel staining, and gum appearance — powered by AI vision.</p>
           </article>
           <article class="card">
-            <h3>Personal tips</h3>
-            <p>Actionable, plain-language suggestions based on what the AI sees — no clinical jargon, no treatment claims.</p>
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3h1V6a4 4 0 0 1 4-4z"/></svg></div>
+            <h3>3-angle deep scan</h3>
+            <p>Front, upper, and lower jaw captures with in-app camera guidance — about 30 seconds for a full analysis.</p>
           </article>
           <article class="card">
-            <h3>Food tracker</h3>
-            <p>Log meals and scan foods to understand sugar and acid exposure that may affect your smile over time.</p>
-          </article>
-          <article class="card">
-            <h3>Progress history</h3>
-            <p>Compare scans over time and watch your score trend as your routine improves.</p>
-          </article>
-          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/></svg></div>
             <h3>Whitening simulation</h3>
-            <p>Explore a cosmetic before/after preview with ScanDent Pro — an AI-enhanced visual simulation, not a treatment promise.</p>
+            <p>Explore a cosmetic before/after preview with ScanDent Pro — a visual simulation, not a treatment promise.</p>
           </article>
           <article class="card">
-            <h3>Privacy first</h3>
-            <p>Photos stay on your device by default and are sent securely only for analysis. We do not sell your images.</p>
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <h3>Daily care plan</h3>
+            <p>Personal tips, morning/evening checklist, brushing reminders, and streak tracking to keep you consistent.</p>
           </article>
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M6 8H5a4 4 0 0 0 0 8h1M6 12h12"/></svg></div>
+            <h3>Food tracker</h3>
+            <p>Log meals and scan foods to understand sugar and acid exposure that may affect your dental health over time.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-6"/></svg></div>
+            <h3>Progress history</h3>
+            <p>Compare scans side-by-side and watch your score trend as your routine improves.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="watch" class="alt">
+      <div class="container watch-band">
+        <div class="watch-band-copy">
+          <span class="eyebrow">Free Apple Watch app</span>
+          <h2>Brush smarter on your wrist</h2>
+          <p>
+            ScanDent includes a companion Apple Watch app at no extra cost — syncs with your iPhone plan,
+            streak, and daily checklist. No paywall on Watch.
+          </p>
+          <div class="watch-features">
+            <div class="watch-feature">
+              <div class="watch-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+              <div>
+                <strong>Today view</strong>
+                <span>Streak, progress ring, and morning/evening checklist</span>
+              </div>
+            </div>
+            <div class="watch-feature">
+              <div class="watch-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div>
+                <strong>2-minute brush timer</strong>
+                <span>Guided zones, micro-instructions, and haptic cues</span>
+              </div>
+            </div>
+            <div class="watch-feature">
+              <div class="watch-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
+              <div>
+                <strong>Complications</strong>
+                <span>Streak and brush shortcuts on your watch face</span>
+              </div>
+            </div>
+            <div class="watch-feature">
+              <div class="watch-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+              <div>
+                <strong>iPhone sync</strong>
+                <span>Checklist and streak stay in sync via App Group</span>
+              </div>
+            </div>
+          </div>
+          <span class="watch-free-tag">Included free · no Watch subscription</span>
+        </div>
+        <div class="watch-visual">
+          <div class="watch-screenshots">
+            <figure class="watch-shot">
+              <div class="watch-frame">
+                <img src="assets/watch/today.png" alt="ScanDent Apple Watch Today screen showing streak, daily progress, and Start 2-min brush button" width="368" height="448" loading="lazy">
+              </div>
+              <figcaption>Today — streak, progress & checklist</figcaption>
+            </figure>
+            <figure class="watch-shot">
+              <div class="watch-frame">
+                <img src="assets/watch/brush-timer.png" alt="ScanDent Apple Watch brushing timer with zone guide and micro-instruction" width="368" height="448" loading="lazy">
+              </div>
+              <figcaption>Brush timer — zones & guided tips</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -122,17 +230,59 @@
         <div class="steps">
           <article class="step">
             <h3>Capture</h3>
-            <p>Use the in-app camera guide to take front, upper, and lower jaw photos in good lighting.</p>
+            <p>Use the in-app camera guide to take front, upper, and lower jaw photos — or pick from your library inside the deep scan flow.</p>
           </article>
           <article class="step">
             <h3>Analyze</h3>
-            <p>ScanDent sends images to our secure AI proxy for analysis and returns your personalized ScanDent report.</p>
+            <p>ScanDent sends compressed images to our secure AI proxy and returns your personalized Dental Score and insights.</p>
           </article>
           <article class="step">
             <h3>Improve</h3>
-            <p>Unlock detailed insights with Pro, follow your daily plan, and track progress on your next scan.</p>
+            <p>Follow your daily plan, track streaks on iPhone and Watch, and compare progress on your next scan.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>ScanDent Pro</h2>
+          <p>Unlock full scan details, whitening simulation, unlimited deep scans, food tracker, and more.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Weekly</h3>
+            <div class="amount">$5.99</div>
+            <div class="period">per week</div>
+            <ul>
+              <li>Full Dental Score breakdown</li>
+              <li>Whitening simulation</li>
+              <li>Unlimited deep scans</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <h3>Yearly</h3>
+            <div class="amount">$49.99</div>
+            <div class="period">per year · ~$4.17/mo · 3-day free trial</div>
+            <ul>
+              <li>Everything in Weekly</li>
+              <li>Best value vs weekly</li>
+              <li>Cancel anytime in Apple ID</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Lifetime</h3>
+            <div class="amount">$149.99</div>
+            <div class="period">one-time purchase</div>
+            <ul>
+              <li>Permanent Pro access</li>
+              <li>No subscription</li>
+              <li>All current Pro features</li>
+            </ul>
+          </article>
+        </div>
+        <p class="pricing-note">Prices in USD. Regional pricing may vary. Subscriptions are billed through Apple.</p>
       </div>
     </section>
 
@@ -149,16 +299,20 @@
 
     <section class="cta" id="download">
       <div class="container">
-        <h2>Ready to scan your smile?</h2>
-        <p>ScanDent is coming to the App Store. Join TestFlight or check back soon for the public launch.</p>
-        <a class="btn btn-primary" href="mailto:support@scandent.app?subject=ScanDent%20App%20Interest">Contact us</a>
+        <img class="cta-logo" src="assets/logo-mark.png" alt="ScanDent logo" width="72" height="72">
+        <h2>Ready for your Dental Score?</h2>
+        <p>ScanDent is coming to the App Store. Join TestFlight or contact us for early access.</p>
+        <a class="btn btn-primary" href="mailto:support@scandent.app?subject=ScanDent%20Early%20Access">Contact us</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>© <span id="year"></span> ScanDent. All rights reserved.</div>
+      <div class="footer-brand">
+        <img src="assets/logo-mark.png" alt="" width="28" height="28">
+        <span>© <span id="year"></span> ScanDent</span>
+      </div>
       <div class="footer-links">
         <a href="terms/">Terms of Service</a>
         <a href="privacy/">Privacy Policy</a>
