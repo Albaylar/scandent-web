@@ -26,7 +26,7 @@
     <div class="container">
       <a class="back-link" href="../">← Back to ScanDent</a>
       <h1>Privacy Policy</h1>
-      <p class="legal-meta">Last updated: July 22, 2026 · Applies to ScanDent iOS, Apple Watch, and scandent-web</p>
+      <p class="legal-meta">Last updated: July 30, 2026 · Applies to ScanDent iOS, Apple Watch, and scandent-web</p>
 
       <p>
         This Privacy Policy explains how ScanDent (“we”, “us”, or “our”) collects, uses, and shares
@@ -39,9 +39,36 @@
 
       <h3>Photos and camera data</h3>
       <p>
-        When you run a dental scan or food scan, you choose photos to analyze. Images are compressed on
-        your device before upload. We send them to our secure proxy server solely to perform the analysis
-        you requested. We do not use your photos for advertising profiles.
+        When you run a dental scan or food scan, you choose photos to analyze. These images typically
+        show your mouth and teeth and <strong>may include parts of your face</strong> (for example lips
+        or cheeks visible in a smile selfie). Images are compressed on your device before upload. After
+        you give in-app permission, we send them to our secure proxy server solely to perform the
+        analysis you requested. We do not use your photos for advertising profiles.
+      </p>
+
+      <h3>Face data</h3>
+      <p>
+        <strong>What we collect:</strong> Smile / mouth photographs you capture or select for a Dental
+        Score, whitening simulation, or related analysis. We do <strong>not</strong> collect Face ID
+        data, TrueDepth meshes, biometric face templates, or a persistent face-geometry model.
+      </p>
+      <p>
+        <strong>On-device (not shared):</strong> To help you frame your mouth correctly and to render
+        optional on-device whitening previews, the camera may use Apple&apos;s Vision framework to detect
+        facial landmarks (such as lip position) in real time. That landmark processing happens entirely
+        on your device, is used only momentarily, is <strong>never stored</strong>, and is
+        <strong>never transmitted</strong> to our servers or any third party.
+      </p>
+      <p>
+        <strong>Shared with AI (with your permission):</strong> The photos you deliberately submit for
+        analysis are sent to our proxy and third-party AI providers as described in section 3. The app
+        asks for your explicit consent before the first upload. You can decline; in that case no photo
+        is sent.
+      </p>
+      <p>
+        <strong>Retention &amp; deletion:</strong> Uploaded photos are processed to return your result
+        and are not retained as a long-term photo library on our servers. Scan results and history remain
+        on your device until you delete them or uninstall the app.
       </p>
 
       <h3>Analysis results</h3>
@@ -83,6 +110,12 @@
       </ul>
 
       <h2>3. AI processing and third parties</h2>
+      <p>
+        Before your photos are sent for analysis for the first time, the app shows an in-app
+        disclosure that explains what is sent (your captured mouth/teeth photos), who receives it
+        (our secure server and the third-party AI providers below), and asks for your explicit
+        permission to continue. You can decline, in which case no photos are sent.
+      </p>
       <p>To deliver analysis, images and prompts may be processed by:</p>
       <ul>
         <li><strong>Our proxy infrastructure</strong> (hosted on Vercel) — receives photos, calls AI models, returns JSON results;</li>
