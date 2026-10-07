@@ -26,20 +26,20 @@
     <div class="container">
       <a class="back-link" href="../">← Back to ScanDent</a>
       <h1>Privacy Policy</h1>
-      <p class="legal-meta">Last updated: July 30, 2026 · Applies to ScanDent iOS, Apple Watch, and scandent-web</p>
+      <p class="legal-meta">Last updated: October 7, 2026 · Applies to ScanDent iOS, Apple Watch, and scandent-web</p>
 
       <p>
         This Privacy Policy explains how ScanDent (“we”, “us”, or “our”) collects, uses, and shares
         information when you use our mobile application and website (the “Service”). We designed ScanDent
-        with privacy in mind: your photos stay on your device by default and are processed only when you
-        request an analysis.
+        with privacy in mind: your photos stay on your device by default, are sent only when you request an
+        analysis, and are <strong>never saved on our servers</strong>.
       </p>
 
       <h2>1. Information we collect</h2>
 
       <h3>Photos and camera data</h3>
       <p>
-        When you run a dental scan or food scan, you choose photos to analyze. These images typically
+        When you run a dental scan, food scan, or Fast Check, you choose photos to analyze. These images typically
         show your mouth and teeth and <strong>may include parts of your face</strong> (for example lips
         or cheeks visible in a smile selfie). Images are compressed on your device before upload. After
         you give in-app permission, we send them to our secure proxy server solely to perform the
@@ -66,9 +66,11 @@
         is sent.
       </p>
       <p>
-        <strong>Retention &amp; deletion:</strong> Uploaded photos are processed to return your result
-        and are not retained as a long-term photo library on our servers. Scan results and history remain
-        on your device until you delete them or uninstall the app.
+        <strong>Retention &amp; deletion:</strong> Our server analyzes your photos in memory and
+        <strong>never saves them</strong>: they are not written to disk, a database, or our logs, and are
+        discarded as soon as your result is returned. Our AI providers (Google Gemini, OpenAI) may keep a
+        copy for a limited time for safety checks only (OpenAI: up to 30 days); see section 3. Your scores
+        and scan history are stored only on your iPhone until you delete them or uninstall the app.
       </p>
 
       <h3>Analysis results</h3>
@@ -125,15 +127,18 @@
         <li><strong>Apple</strong> — App Store billing, TestFlight, and platform services.</li>
       </ul>
       <p>
-        These providers process data under their own terms and privacy policies. We configure our systems
-        so photos are transmitted for analysis only and are <strong>not intentionally stored long-term</strong>
-        on our proxy after the request completes.
+        Our proxy processes photos in memory only and does not store them after the request completes.
+        The AI providers process data under their own API terms and privacy policies: OpenAI does not use
+        API inputs to train its models and may retain them for up to 30 days for abuse monitoring; Google
+        may log Gemini API requests for a limited period to detect misuse. We do not share your photos with
+        anyone else and do not use them for advertising.
       </p>
 
       <h2>4. Data retention</h2>
       <ul>
         <li><strong>On your device:</strong> Scan history, plans, streaks, and preferences remain until you delete the App or clear data.</li>
-        <li><strong>On our servers:</strong> Analysis requests are processed transiently. We do not build a permanent photo library of users on the proxy.</li>
+        <li><strong>On our servers:</strong> Photos are never saved. Our proxy keeps only short-lived request counters for rate limits and free-tier quotas, keyed by a random app install ID or your IP address. They contain no images or results and expire automatically (food-scan quota counters within about a week).</li>
+        <li><strong>At our AI providers:</strong> Limited retention for safety checks under their API terms (OpenAI: up to 30 days), as described in section 3.</li>
         <li><strong>Support email:</strong> If you contact us, we retain correspondence as long as needed to resolve your request.</li>
       </ul>
 
